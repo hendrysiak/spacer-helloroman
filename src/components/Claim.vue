@@ -20,15 +20,34 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: white;
+  text-align: center;
 }
 
 .claim {
   font-size: 50px;
   margin: 0;
+
+  @media (min-width: 768px) {
+    font-size: 80px;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 100px;
+  }
 }
 
 .subclaim {
-  margin: 25px 0 0 0;
+  margin: 20px 0 0 0;
+
   font-size: 13px;
+  font-weight: 400;
+
+  @media (min-width: 768px) {
+    font-size: 17px;
+    width: 500px;
+    letter-spacing: 1px;
+    font-weight: 300;
+  }
 }
 </style>
